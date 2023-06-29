@@ -8,11 +8,17 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
-
-
+    const n1 = Number(prompt(`Quantos litros de combustivel voce comprou`).trim().replace(",", "."));
     //Processamento
-
-    
+    let n2 = n1 * 0.20 + n1;
+    let n3 = n1 * 0.15 + n1;
+    let n4 = n1 * 0.10 + n1;
+    let n5 = n1 * 0.05 + n1;
+    (n1 <= 280) ? alert(`O valor do produto será de ${n2} Reais`)
+    : (n1 <= 700) ? alert(`O valor do produto será de ${n3} Reais`)
+    : (n1 <= 150) ? alert(`O valor do produto será de ${n4} Reais`)
+    : (n1 > 1500) ? alert(`O valor do produto será de ${n5} Reais`)
+    : alert(`Digite apenas numeros`)
     //Saída
 
 </script>
